@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "./components/banner.css";
+@import "./components/button.css";
+@import "./components/footer.css";
+@import "./components/sort.css";
+@import "./components/cart.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header {
+    background: #fff;
+    padding: 35px 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 52px;
+    list-style-type: none;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li .a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+}
+
+nav ul li .a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: #000;
+    transform: scaleX(0);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 00.22, 1);
+    transform-origin: right center;
+    width: 100%;
+}
+
+nav ul li .a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+    transition-duration: 0.4s;
+}
+
+nav ul li .a:hover {
+    color: black;
+}
+
+.header .icons {
+    display: flex;
+    gap: 24px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.header .icons a {
+    color: #000;
+    text-decoration: none;
+}
+
+.header .icons a span {
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    bottom: 17px;
+    right: 3px;
+}
+
+.cart_block {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cart_block .content_items {
+    grid-column-gap: 11px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr auto);
+    gap: 20px;
+}

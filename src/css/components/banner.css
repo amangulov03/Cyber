@@ -1,0 +1,187 @@
+.banner {
+    background: #211c24;
+}
+
+.banner .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner .content .titles {
+    display: grid;
+    gap: 10px;
+}
+
+.banner .content .titles h6 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffffff40;
+}
+
+.banner .content .titles h1 {
+    font-size: 96px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.banner .content .titles h1 span {
+    font-weight: 700;
+}
+
+.banner .content .titles p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #909090;
+}
+
+/* Для Smallerbunner  */
+
+.smaller_bunner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.smaller_bunner p {
+    color: #909090;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+.smaller_bunner .left_banner .wide_banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.smaller_bunner .left_banner .wide_banner .title_text {
+    max-width: 350px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.smaller_bunner .left_banner .wide_banner .title_text h4 {
+    color: black;
+    font-size: 49px;
+    font-weight: 400;
+}
+
+.left_banner .squares {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left_banner .squares .left_squares {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 272px;
+}
+
+.left_banner .squares .left_squares .title_text {
+    max-width: 150px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.left_banner .squares .left_squares .title_text h3 {
+    color: #000;
+    font-size: 29px;
+    font-weight: 300;
+}
+
+.left_banner .squares .left_squares .title_text h3 span {
+    font-weight: 600;
+}
+
+.left_banner .squares .right_squares {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 272px;
+    background: #353535;
+}
+
+.left_banner .squares .right_squares .title_text {
+    max-width: 150px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.left_banner .squares .right_squares .title_text h3 {
+    color: #fff;
+    font-size: 29px;
+    font-weight: 300;
+}
+
+.left_banner .squares .right_squares .title_text h3 span {
+    font-weight: 600;
+}
+
+.smaller_bunner .big_banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.smaller_bunner .big_banner .content .title_text {
+    max-width: 450px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.smaller_bunner .big_banner .content .title_text h5 {
+    font-size: 64px;
+    color: #000;
+    font-weight: 300;
+    width: 100px;
+    position: relative;
+    top: 25px;
+}
+
+.smaller_bunner .big_banner .content .title_text h5 span {
+    font-weight: 600;
+    position: relative;
+    bottom: 17px;
+}
+
+/* Для Endbunner */
+
+.endBunner {
+    background-image: url("/src/assert/img/Banner\ 2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 448px;
+    display: grid;
+    place-items: center;
+}
+
+.endBunner .content {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+}
+
+.endBunner .content .titles {
+    color: #fff;
+}
+
+.endBunner .content .titles h1 {
+    font-size: 72px;
+    font-weight: 100;
+}
+
+.endBunner .content .titles h1 span {
+    font-weight: 600;
+}
+
+.endBunner .content .titles p {
+    color: #787878;
+}

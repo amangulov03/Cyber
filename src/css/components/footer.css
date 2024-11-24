@@ -1,0 +1,92 @@
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 104px 0;
+}
+
+.info {
+    display: flex;
+
+    gap: 200px;
+}
+
+
+.info .logo_text p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #cfcfcf;
+    line-height: 170.5%;
+    width: 400px;
+    padding-top: 20px;
+}
+
+.info .footer_nav {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.info .footer_nav .section h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.info .footer_nav .section ul {
+    list-style-type: none;
+    display: grid;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.info .footer_nav .section ul li a {
+    text-decoration: none;
+    color: #cfcfcf;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.2s ease;
+}
+
+.info .footer_nav .section ul li a:hover {
+    color: #fff;
+}
+
+.footer .social_icons {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    font-size: 16px;
+    padding-top: 24px;
+}
+
+.footer .social_icons a .icon_twi {
+    color: #fff;
+    transition: 0.2s ease;
+}
+.footer .social_icons a .icon_twi:hover {
+    color: #00acee;
+}
+
+.footer .social_icons a .icon_fac {
+    color: #fff;
+    transition: 0.2s ease;
+}
+.footer .social_icons a .icon_fac:hover {
+    color: #3b5998;
+}
+
+.footer .social_icons a .icon_tik {
+    color: #fff;
+    transition: 0.2s ease;
+}
+.footer .social_icons a .icon_tik:hover {
+    color: #2d2d2d;
+}
+
+.footer .social_icons a .icon_ins {
+    color: #fff;
+    transition: 0.2s ease;
+}
+.footer .social_icons a .icon_ins:hover {
+    color: #e1306c;
+}
+

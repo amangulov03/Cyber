@@ -1,0 +1,60 @@
+.button {
+    height: 59px;
+    width: 191px;
+    background: rgba(255, 255, 255, 0); /* Прозрачный фон */
+    border: #000 solid 1px;
+    border-radius: 3px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    transition: background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1; /* Для позиционирования перед псевдоэлементом */
+}
+
+.button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 59px;
+    background: #000;
+    transform: scaleX(0); /* Начальное состояние: скрыто */
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    transform-origin: right center; /* Анимация начинается справа */
+    width: 100%;
+    z-index: -1; /* Расположение под кнопкой */
+    border-radius: 3px;
+}
+
+.button:hover {
+    color: #fff; /* Белый текст при наведении */
+}
+
+.button:hover::after {
+    transform: scaleX(1); /* Показываем псевдоэлемент */
+    transform-origin: left center; /* Анимация расширяется слева */
+    transition-duration: 0.4s; /* Продолжительность анимации */
+}
+
+/* Стили для кнопки с модификатором outline */
+.button--outline {
+    background: rgba(255, 255, 255, 0); /* Прозрачный фон */
+    color: #fff; /* Белый текст */
+    border: 1px solid #fff;
+}
+
+.button--outline:hover {
+    color: #000; /* Черный текст при наведении */
+}
+
+.button--outline::after {
+    background: #fff; /* Белый фон при outline */
+}
+
+/* Эффект при нажатии */
+.button:active {
+    transform: translateY(1px); /* Легкий эффект нажатия */
+}

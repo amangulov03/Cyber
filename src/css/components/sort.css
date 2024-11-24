@@ -1,0 +1,86 @@
+.sort {
+    position: relative;
+    width: 250px;
+}
+
+.sort .sort_brand {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+    padding: 20px 0;
+    border-bottom: 1px solid #b5b5b5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.sort .sort_brand:hover {
+    background: #00000004;
+}
+
+.sort .sort_brand h4 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.sort .sort_brand svg {
+    transform: rotate(180deg);
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    top: 21px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.sort .sort_brand svg.rotate {
+    transform: rotate(0);
+    transition: 0.3s ease-in-out;
+    
+}
+
+.sort .sort_popap {
+    max-height: 0; /* Изначально скрыто */
+    overflow: hidden; /* Скрываем содержимое за пределами */
+    transition: max-height 0.3s ease; /* Плавный переход */
+}
+
+.sort .sort_popap.active {
+    max-height: 200px; /* Достаточно большое значение для полного раскрытия */
+}
+
+.sort .sort_popap ul {
+    list-style-type: none;
+    display: grid;
+    gap: 5px;
+    margin-left: 5px;
+}
+
+.sort .sort_popap ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sort .sort_popap ul li label {
+    cursor: pointer;
+    user-select: none;
+}
+
+.sort .sort_popap ul li input {
+    cursor: pointer;
+    accent-color: black;
+    transition: all 0.3s ease; /* Плавный переход */
+}
+
+.sort .sort_popap ul li input:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+.sort .sort_popap ul li input:checked {
+    accent-color: black;
+    transform: scale(1.2); /* Увеличение при отметке */
+    transition: all 0.3s ease; /* Плавность отмеченного */
+}
