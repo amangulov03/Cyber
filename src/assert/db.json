@@ -1,0 +1,101 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-pro-finish-select-202409-6-9inch-whitetitanium-600x600.webp",
+            "name": "iPhone 16 Pro Max",
+            "types": [1, 2, 3],
+            "price": 1437,
+            "category": 0,
+            "rating": 10,
+            "colors": [
+                { "color": "#f3f2ed", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-pro-finish-select-202409-6-9inch-whitetitanium-600x600.webp" },
+                { "color": "#bbb5a9", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-pro-finish-select-202409-6-9inch-naturaltitanium-600x600.webp" },
+                { "color": "#cdbbad", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-pro-finish-select-202409-6-9inch-deserttitanium-600x600.webp" },
+                { "color": "#4b4c4e", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-pro-finish-select-202409-6-9inch-blacktitanium-600x600.webp" }
+            ]
+        },
+        {
+            "id": 1,
+            "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-pro-finish-select-202409-6-9inch-whitetitanium-600x600.webp",
+            "name": "iPhone 16 Pro",
+            "types": [1, 2, 3],
+            "price": 1300,
+            "category": 0,
+            "rating": 10,
+            "colors": [
+                { "color": "#f3f2ed", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-pro-finish-select-202409-6-9inch-whitetitanium-600x600.webp" },
+                { "color": "#bbb5a9", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-pro-finish-select-202409-6-9inch-naturaltitanium-600x600.webp" },
+                { "color": "#cdbbad", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-pro-finish-select-202409-6-9inch-deserttitanium-600x600.webp" },
+                { "color": "#4b4c4e", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-pro-finish-select-202409-6-9inch-blacktitanium-600x600.webp" }
+            ]
+        },
+        {
+            "id": 2,
+            "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-finish-select-202409-6-7inch-teal-600x600.webp",
+            "name": "iPhone 16 Plus",
+            "types": [0, 1, 2, 3],
+            "price": 1070,
+            "category": 0,
+            "rating": 8,
+            "colors": [
+                { "color": "#a1cac8", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-finish-select-202409-6-7inch-teal-600x600.webp" },
+                { "color": "#8296df", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-finish-select-202409-6-7inch-ultramarine-600x600.webp" },
+                { "color": "#26242d", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-finish-select-202409-6-7inch-black-600x600.webp" },
+                { "color": "#eea4d3", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-finish-select-202409-6-7inch-pink-600x600.webp" },
+                { "color": "#f4f0ed", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2024/09/iphone-16-finish-select-202409-6-7inch-white-600x600.webp" }
+
+                
+            ]
+        },
+        {
+            "id": 3,
+            "imageUrl": "https://onlyphones.ru/wp-content/uploads/2023/09/iphone-15-finish-select-202309-6-7inch-pink_fmt_whh.jpg",
+            "name": "iPhone 15 Plus",
+            "types": [0, 1, 2, 3],
+            "price": 950,
+            "category": 0,
+            "rating": 7,
+            "colors": [
+                { "color": "#fce7e2", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2023/09/iphone-15-finish-select-202309-6-7inch-pink_fmt_whh.jpg" },
+                { "color": "#26242d", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2023/09/iphone-15-finish-select-202309-6-7inch-black.jpg" },
+                { "color": "#d9efd6", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2023/09/iphone-15-finish-select-202309-6-7inch-green_fmt_whh.jpg" },
+                { "color": "#dff0f4", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2023/09/iphone-15-finish-select-202309-6-7inch-blue_fmt_whh.jpg" },
+                { "color": "#f6edc3", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2023/09/iphone-15-finish-select-202309-6-7inch-yellow_fmt_whh.jpg" }
+            ]
+        },
+        {
+            "id": 4,
+            "imageUrl": "https://onlyphones.ru/wp-content/uploads/2022/11/14-Plus_Starlight-600x600.jpg",
+            "name": "iPhone 14 Plus",
+            "types": [0, 1, 2, 3],
+            "price": 800,
+            "category": 0,
+            "rating": 6,
+            "colors": [
+                { "color": "#fcf9f7", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2022/11/14-Plus_Starlight-600x600.jpg" },
+                { "color": "#293038", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2022/11/14-Plus_Midnight-600x600.jpg" },
+                { "color": "#d6302f", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2022/11/14-Plus_PRODUCTRED-600x600.jpg" },
+                { "color": "#e6dbeb", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2022/11/14-Plus_Purple-600x600.jpg" },
+                { "color": "#a0b4c5", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2022/11/14-Plus_Blue-600x600.jpg" },
+                { "color": "#f8cf46", "imageUrl": "https://onlyphones.ru/wp-content/uploads/2023/03/14-plus_yellow-1-600x600.jpg" }
+                
+            ]
+        },
+        {
+            "id": 5,
+            "imageUrl": "https://samsungstore.kg/cache/files/14442.png_w630_h480_resize.png?t=1707891377",
+            "name": "Galaxy S24 Ultra",
+            "types": [1, 2, 3],
+            "price": 1000,
+            "category": 1,
+            "rating": 10,
+            "colors": [
+                { "color": "#000000", "imageUrl": "https://samsungstore.kg/cache/files/14442.png_w630_h480_resize.png?t=1707891377" },
+                { "color": "#dbdbdb", "imageUrl": "https://samsungstore.kg/cache/files/14450.png_w630_h480_resize.png?t=1707891398" }
+                
+                
+            ]
+        }
+    ]
+}

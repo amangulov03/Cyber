@@ -1,17 +1,26 @@
 import React, { useState } from "react";
 import Button from "./Button";
 
-import iphone16 from "../aproducts/img/iphone-card-40-iphone16prohero-202409-removebg-preview.png";
-
-function Cartitem() {
+function Cartitem({ name, price, imageUrl, colors, types }) {
     const [colorHeart, setColorHeart] = useState("#ffffff");
     const [isPulsing, setIsPulsing] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(imageUrl); // Текущее изображение телефона
+    const [activeType, setActiveType] = useState(types.includes(0) ? 0 : 1);
+    
 
     const handleHeartClick = () => {
-        setColorHeart((prevColor) => (prevColor === "#ffffff" ? "red" : "#ffffff"));
+        setColorHeart((prevColor) =>
+            prevColor === "#ffffff" ? "red" : "#ffffff"
+        );
         setIsPulsing(true);
         setTimeout(() => setIsPulsing(false), 300); // Отключаем пульсацию через 300 мс
     };
+
+    const handleColorClick = (colorOption) => {
+        setSelectedImage(colorOption.imageUrl); // Меняем изображение при выборе цвета
+    };
+
+    const typeName = ["128ГБ", "258ГБ", "516ГБ", "1ТБ"];
 
     return (
         <div className="phone_block">
@@ -31,9 +40,32 @@ function Cartitem() {
                     strokeLinecap="round"
                 />
             </svg>
-            <img src={iphone16} alt="" />
-            <p>iPhone 16 Pro & iPhone 16 Pro Max</p>
-            <span className="price_text">$1437</span>
+            <img src={selectedImage} alt={name} />
+            <p>{name}</p>
+            <div className="color_options">
+                {colors.map((colorOption, index) => (
+                    <div
+                        key={index}
+                        className="color_circle"
+                        style={{ backgroundColor: colorOption.color }}
+                        onClick={() => handleColorClick(colorOption)}
+                    ></div>
+                ))}
+            </div>
+            <div className="phone_memory">
+                <ul>
+                    {types.map((typeID) => (
+                        <li
+                            key={typeID}
+                            className={activeType === typeID ? "active" : ""}
+                            onClick={() => setActiveType(typeID)}
+                        >
+                            {typeName[typeID]}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <span className="price_text">${price}</span>
             <Button>
                 <span>Buy Now</span>
             </Button>

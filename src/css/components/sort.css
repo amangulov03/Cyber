@@ -9,10 +9,10 @@
     gap: 180px;
     padding: 20px 0;
     border-bottom: 1px solid #b5b5b5;
-    margin-bottom: 10px;
     cursor: pointer;
     border-radius: 10px 10px 0 0;
     position: relative;
+    user-select: none;
 }
 
 .sort .sort_brand:hover {
@@ -56,6 +56,7 @@
     display: grid;
     gap: 5px;
     margin-left: 5px;
+    padding-top: 10px;
 }
 
 .sort .sort_popap ul li {
