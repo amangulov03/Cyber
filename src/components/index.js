@@ -5,5 +5,6 @@ export { default as Smallerbunner } from "./Smallerbunner";
 export { default as Endbunner } from "./Endbunner";
 export { default as Footer } from "./Footer";
 export { default as Sortphone } from "./Sortphone";
-export { default as Cartitem } from "./Cartitem";
-
+export { default as Cartitem } from "./productsBlock/Cartitem";
+export { default as Skeleton } from "./productsBlock/Skeleton";
+export { default as NotFoundBlock } from "./notFoundBlock/NotFoundBlock";

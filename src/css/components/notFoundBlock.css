@@ -1,0 +1,25 @@
+.notFoundBlock {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.back svg {
+    width: 30px;
+}
+
+
+
+.notFoundBlock img {
+    padding-top: 20px;
+    width: 400px;
+}

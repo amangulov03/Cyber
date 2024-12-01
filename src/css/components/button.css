@@ -9,10 +9,11 @@
     font-weight: 400;
     transition: background 0.3s ease, color 0.3s ease;
     cursor: pointer;
-    margin-top: 20px;
     position: relative;
     z-index: 1; /* Для позиционирования перед псевдоэлементом */
 }
+
+
 
 .button::after {
     content: "";
@@ -31,6 +32,10 @@
 
 .button:hover {
     color: #fff; /* Белый текст при наведении */
+}
+
+.button:hover svg {
+    fill: #fff;
 }
 
 .button:hover::after {

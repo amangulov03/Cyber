@@ -90,3 +90,36 @@
     color: #e1306c;
 }
 
+@media (max-width: 1024px) {
+    .info {
+        display: flex;
+        gap: 100px;
+    }
+
+    .info .footer_nav {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (max-width: 431px) {
+    .info {
+        display: grid;
+        place-items: center;
+        gap: 30px;
+    }
+
+    .info .footer_nav {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}

@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import Button from "./Button";
+import Button from "../Button";
 
 function Cartitem({ name, price, imageUrl, colors, types }) {
     const [colorHeart, setColorHeart] = useState("#ffffff");
     const [isPulsing, setIsPulsing] = useState(false);
     const [selectedImage, setSelectedImage] = useState(imageUrl); // Текущее изображение телефона
     const [activeType, setActiveType] = useState(types.includes(0) ? 0 : 1);
-    
 
     const handleHeartClick = () => {
         setColorHeart((prevColor) =>
