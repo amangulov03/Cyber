@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Sortphone() {
+function Sortphone({ value, onclickCategory, onclickSort }) {
     const [visibleCheckboxPopup, setVisibleCheckboxPopup] = useState(false);
     const [visibleRadioPopup, setVisibleRadioPopup] = useState(false);
     const [selectedSort, setSelectedSort] = useState("popularity");
@@ -14,14 +14,13 @@ function Sortphone() {
     };
 
     const handleSortChange = (event) => {
-        setSelectedSort(event.target.value);
+        const sortValue = event.target.value;
+        setSelectedSort(sortValue);
+        onclickSort(sortValue); // Передаем выбранный параметр сортировки родительскому компоненту
     };
 
-    const itemsBrand = [
-        { id: "apple", label: "Apple" },
-        { id: "samsung", label: "Samsung" },
-        { id: "xiaomi", label: "Xiaomi" },
-        { id: "poco", label: "Poco" },
+    const itemsBrand2 = [
+        'Все', 'Apple', 'Samsung', 'Xiaomi', 'Poco'
     ];
 
     const itemsSort = [
@@ -52,15 +51,9 @@ function Sortphone() {
                 className={`sort_popap ${visibleCheckboxPopup ? "active" : ""}`}
             >
                 <ul>
-                    {itemsBrand.map((item) => (
-                        <li key={item.id}>
-                            <input
-                                type="checkbox"
-                                id={item.id}
-                                name="brand"
-                                value={item.label}
-                            />
-                            <label htmlFor={item.id}>{item.label}</label>
+                    {itemsBrand2.map((item, i) => (
+                        <li key={i} onClick={() => onclickCategory(i)} className={value === i ? "active" : ""}>
+                            {item}
                         </li>
                     ))}
                 </ul>
@@ -86,13 +79,13 @@ function Sortphone() {
             <div className={`sort_popap ${visibleRadioPopup ? "active" : ""}`}>
                 <ul>
                     {itemsSort.map((item) => (
-                        <li key={item.id}>
+                        <li key={item.id} className="li_radio">
                             <input
                                 type="radio"
                                 id={item.id}
                                 name="sort"
-                                value={item.id} 
-                                checked={selectedSort === item.id} 
+                                value={item.id}
+                                checked={selectedSort === item.id}
                                 onChange={handleSortChange}
                             />
                             <label htmlFor={item.id}>{item.label}</label>

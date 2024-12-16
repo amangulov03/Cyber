@@ -38,7 +38,7 @@
 .sort .sort_brand svg.rotate {
     transform: rotate(0);
     transition: 0.3s ease-in-out;
-    
+
 }
 
 .sort .sort_popap {
@@ -63,25 +63,28 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s ease;
+    padding: 3px 7px;
 }
 
-.sort .sort_popap ul li label {
+.sort .sort_popap ul li.active {
+    color: #ffffff;
+    background: #000;
+    padding: 3px 7px;
+    border-radius: 5px;
+
+}
+
+.sort .sort_popap ul .li_radio label {
     cursor: pointer;
     user-select: none;
+    color: #000;
 }
 
-.sort .sort_popap ul li input {
+.sort .sort_popap ul .li_radio input {
     cursor: pointer;
     accent-color: black;
     transition: all 0.3s ease; /* Плавный переход */
-}
-
-.sort .sort_popap ul li input:hover {
-    transform: scale(1.1); /* Увеличение при наведении */
-}
-
-.sort .sort_popap ul li input:checked {
-    accent-color: black;
-    transform: scale(1.2); /* Увеличение при отметке */
-    transition: all 0.3s ease; /* Плавность отмеченного */
 }
