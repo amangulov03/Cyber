@@ -8,3 +8,4 @@ export { default as Sortphone } from "./Sortphone";
 export { default as Cartitem } from "./productsBlock/Cartitem";
 export { default as Skeleton } from "./productsBlock/Skeleton";
 export { default as NotFoundBlock } from "./notFoundBlock/NotFoundBlock";
+export { default as Search } from "./Search/index";

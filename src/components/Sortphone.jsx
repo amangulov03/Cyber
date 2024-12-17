@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import Search from "./Search";
 
-function Sortphone({ value, onclickCategory, onclickSort }) {
+function Sortphone({ value, onclickCategory, onclickSort, searchValue, setSearchValue }) {
     const [visibleCheckboxPopup, setVisibleCheckboxPopup] = useState(false);
     const [visibleRadioPopup, setVisibleRadioPopup] = useState(false);
     const [selectedSort, setSelectedSort] = useState("popularity");
@@ -30,6 +31,7 @@ function Sortphone({ value, onclickCategory, onclickSort }) {
 
     return (
         <div className="sort">
+            <Search searchValue={searchValue} setSearchValue={setSearchValue} />
             {/* Brands */}
             <div className="sort_brand" onClick={toggleCheckboxPopup}>
                 <h4>Brand</h4>

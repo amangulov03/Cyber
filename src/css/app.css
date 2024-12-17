@@ -6,7 +6,7 @@
 @import "./components/productBlock.css";
 @import "./components/notFoundBlock.css";
 @import "./components/cart.css";
-
+@import "../components/Search/search.css";
 * {
     margin: 0;
     padding: 0;
@@ -137,7 +137,7 @@ nav ul li .a:hover {
     display: flex;
     align-items: start;
     gap: 30px;
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
 .cart_block .content_items {
@@ -195,8 +195,6 @@ nav ul li .a:hover {
         transition: max-width 0.5s ease-in-out;
     }
 
-   
-
     nav ul {
         position: relative;
         top: 50px;
@@ -236,6 +234,4 @@ nav ul li .a:hover {
         align-items: center;
         justify-content: center;
     }
-
-    
 }

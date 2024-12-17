@@ -1,3 +1,4 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Header, Footer } from './components';
 import { Home, Catalog, About, Contact, Cart } from "./pages";
